@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<!-- <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi" name="viewport" /> -->
+<meta name="Title" content="KRP&E" />
+<meta name="Description" content="KRP&E" />
+<!-- 기본 셋팅시 모바일 메신저로 넘기기 위한 셋팅 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="KRP&E">
+<meta property="og:url" content="http://www.kinkos.co.kr/">
+<meta property="og:image" content="./image/main/logo.png">
+<meta property="og:description" content="KRP&E">
+<!-- //기본 셋팅시 모바일 메신저로 넘기기 위한 셋팅 -->
+<title>메인 | KRP&E</title>
+<!-- CSS FILE LOAD -->
+<!-- <link rel="stylesheet" href="./css/jquery-ui.css"> -->
+<link rel="stylesheet" href="./css/fontawesome.min.css">
+<link rel="stylesheet" href="./css/solid.min.css">
+<link rel="stylesheet" href="./css/common.css">
+
+
+<!-- jqGrid  -->
+<link rel="stylesheet" href="./css/jquery-ui-1.12.1.custom/jquery-ui.css" type="text/css" />
+<link rel="stylesheet" href="./css/jqGrid/ui.jqgrid.css" type="text/css" />
+<link rel="stylesheet" href="./css/jqGrid/ui.multiselect.css" type="text/css" />
+
+
+<!-- SCRIPT -->
+<script type="text/javascript" src="./js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="./js/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+<script type="text/javascript" src="./js/jqGrid/js/jquery.jqGrid.js"></script>
+<script type="text/javascript" src="./js/jqGrid/js/i18n/grid.locale-kr.js"></script>
+<script src="./js/jquery/jquery-accordion-menu.js"></script>
+<script src="./js/common.js"></script>
+<!-- //SCRIPT -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <!-- WRAP -->
+  <div id="wrap">
+    <!-- HEADER -->
+    <div id="header">
+      <div class="header clearfix">
+        <h1><a href="01.main.html"><img src="./image/common/logo.png" alt="KRP&E 재고관리시스템"></a></h1>
+        <div class="num_status">
+          <a href="#">일일재고현황</a><span>0</span>
+          <a href="#">발주&선적 현황</a><span>0</span>
+          <a href="#">일일재고현황</a><span>0</span>
+        </div>
+      </div>
+    </div>
+    <!-- //HEADER -->
+
+    <div id="gnb_wrap" class="gnb_wrap">
+      <a href="javascript:void(0)" class="tg_btn" id="openbtn" onclick="openNav()"></a>
+      
+        <div class="login_box">
+            <div class="login_info">
+                <strong>관리자 [admin]님</strong> 로그인 되었습니다.
+            </div>
+            <div class="login_btn clearfix">
+                <a href="#" class="btn small modify">정보수정</a>
+                <a href="#" class="btn small logout">로그아웃</a>
+            </div>
+            <div class="login_time">
+                로그인 시간 :<br>
+                2019.08.09(금) 후 06:30:17
+            </div>
+        </div>
+        <div id="jquery-accordion-menu" class="gnb jquery-accordion-menu blue">
+        <ul class="gnb_list">
+          <li class="on">
+            <a href="#"><i class="fas fa-receipt"></i>기준정보</a>
+            <ul class="submenu">
+              <li class="on"><a href="#">품목마스터</a></li>
+              <li><a href="#">거래처 마스터</a></li>
+              <li><a href="#">구매조직정보 마스터</a></li>
+              <li><a href="#">법인 등록</a></li>
+              <li><a href="#">부서, 사언 등록</a></li>
+              <li><a href="#">환율등록</a></li>
+              <li><a href="#">창고 마스터</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-seedling"></i>기초정보관리</a>
+            <ul class="submenu">
+                <li><a href="#">품목마스터</a></li>
+                <li><a href="#">거래처 마스터</a></li>
+                <li><a href="#">구매조직정보 마스터</a></li>
+                <li><a href="#">법인 등록</a></li>
+                <li><a href="#">부서, 사언 등록</a></li>
+                <li><a href="#">환율등록</a></li>
+                <li><a href="#">창고 마스터</a></li>
+            </ul>
+        </li>
+          <li><a href="#"><i class="fas fa-plane"></i>수입관리</a></li>
+          <li><a href="#"><i class="fas fa-search-dollar"></i>구매관리</a></li>
+          <li><a href="#"><i class="fas fa-briefcase"></i>외주관리</a></li>
+          <li><a href="#"><i class="fas fa-list-alt"></i>품목마스터</a></li>
+          <li><a href="#"><i class="fas fa-handshake"></i>거래마스터</a></li>
+          <li><a href="#"><i class="fas fa-cubes"></i>재고관리</a></li>
+
+        </ul>
+
+        
+      </div>
+
+
+      <!-- Use any element to open the sidenav -->
+      <a href="javascript:void(0)" onclick="closeNav()" class="tg_btn" id="closebtn"></a>
+    </div>
+
+
+
+
+
+    <!-- CONTAINER -->
+    <div id="container">
+    
+    
+    
+    
+    
+    
+    
+        <!-- 본문 -->
+        <div id="content" class="sub">
+            <h2>품목마스터 관리</h2>
+
+            <div class="search_wrap">
+                <form action="" method="post">
+                <fieldset>
+                    <legend>검색조건 입력</legend>
+                    <ul class="item01">
+                        <li>
+                            <span class="label">문서번호</span>
+                            <div class="input_date">
+                                <input type="text" title="입학 연월일 입력" placeholder="2017-08-01">
+                                <span class="space_txt">~</span>
+                                <input type="text" title="입학 연월일 입력" placeholder="2017-08-01">
+                            </div>
+                        </li>
+                        <li>
+                            <span class="label">출처</span>
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">00</option>
+                                <option value="">01</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="label">포장유형</span>
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">00</option>
+                                <option value="">01</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="label">사용여부</span>
+                        <span class="input_box"><input type="text" title=""></span>
+                        </li>
+                       
+                    </ul>
+
+
+
+                    <ul class="item01">
+                        <li>
+                            <span class="label">문서번호</span>
+                            <div class="input_date">
+                                <input type="text" title="입학 연월일 입력" placeholder="2017-08-01">
+                                <span class="space_txt">~</span>
+                                <input type="text" title="입학 연월일 입력" placeholder="2017-08-01">
+                            </div>
+                        </li>
+                        <li>
+                            <span class="label">출처</span>
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">00</option>
+                                <option value="">01</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="label">포장유형</span>
+                            <select>
+                                <option value="">선택</option>
+                                <option value="">00</option>
+                                <option value="">01</option>
+                            </select>
+                        </li>
+                        <li>
+                            <span class="label">사용여부</span>
+                            <span class="input_box"><input type="text" title=""></span>
+                        </li>
+                    
+                    </ul>
+                </fieldset>
+                </form>
+            </div>
+
+            <div class="tbl_wrap">
+                <h3>품목현황</h3>
+                <table class="type1">
+                    <thead>
+                        <tr>
+                            <th scope="col">NO</th>
+                            <th scope="col">품목유형</th>
+                            <th scope="col">제품군</th>
+                            <th scope="col">품목코드</th>
+                            <th scope="col">품목명</th>
+                            <th scope="col">포장유형</th>
+                            <th scope="col">단위</th>
+                            <th scope="col">구매단가</th>
+                            <th scope="col">판매단가</th>
+                            <th scope="col">HS CODE</th>
+                            <th scope="col">리드타임</th>
+                            <th scope="col">재고관리</th>
+                            <th scope="col">검사필수</th>
+                            <th scope="col">사용여부</th>
+                            <th scope="col">첨부파일</th>
+                            <th scope="col">관리정보</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+
+
+            <!-- 사진 변경 팝업 -->
+            <div class="layer_popup profile_layer" data-popup="layer-photo-edit">
+                <div class="popup_box">
+                    <strong class="popup_title">사진 등록</strong>
+                    <div class="popup_con">
+                      
+                    </div>
+                    <button type="button" class="btn_pop_close js-popup-close"><span class="blind">팝업 닫기</span></button>
+                </div>
+                <div class="dim"></div>
+            </div>
+
+
+      </div>
+        <!-- //본문 -->
+
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+      <div id="footer">
+        <div class="footer">
+          © 2019. KRP&E Corporation. All Rights Reserved.
+        </div>
+      </div>
+      <!-- //FOOTER -->
+    </div>
+    <!-- //CONTAINER -->
+
+
+
+
+
+  </div>
+  <!-- //WRAP -->
+
+<!-- SCRIPT -->
+<script src="./js/jquery/jquery-3.4.1.min.js"></script>
+<script src="./js/jquery/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="./js/jquery/jquery-accordion-menu.js"></script>
+<script src="./js/common.js"></script>
+<!-- //SCRIPT -->
+</body>
+
+</html>
